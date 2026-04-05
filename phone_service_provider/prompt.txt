@@ -1,0 +1,77 @@
+Phone Service Provider Part 1
+
+An communications company has three different subscription packages for its customers:
+
+    Package A: For $9.95 per month 5 hours of call time are provided.
+    Additional usage costs $0.08 per minute.
+    Package B: For $14.95 per month 10 hours of call time are provided.
+    Additional usage costs $0.06 per minute.
+    Package C: For $19.95 per month unlimited call time is provided.
+
+Write a program that calculates a customer's monthly bill. The program should ask for the customer's full name, which package the customer has purchased, and how many hours were used. It should then create a bill that includes the input information and the total amount due.
+
+    Wherever possible use named constants instead of numbers.
+    Input Validation: Be sure the user only selects package A, B, or C.
+
+Once you finish Part 1, move on to Part 2.
+Phone Service Provider Part 2
+
+Modify the program so it also displays how much money Package A customers would save if they purchased packages B or C, and how much money package B customers would save if they purchased package C. If there would be no savings, no message should be printed.
+Example Run 1 (Good Design)
+
+The Black text is what your program prints. The Blue text is user input.
+
+                       Enter Your Name: Brian Hall
+What Package do you have? (A, B, or C): A
+             How many hours were used?: 50
+-----------------------------------------
+                    Customer: Brian Hall
+            Customer Package: A
+                  Hours Used: 50
+        Customer Amount Due: $225.95
+-----------------------------------------
+
+Example Run 2 (Bad Design) 
+
+Customer Name: Brian Hall
+Number of hours: 40
+Package: B
+
+Brian Hall, your total is: $122.95
+
+Example Run 3 - Part 1 and Part 2 - This is our goal
+
+                        Enter Your Name: Brian Hall
+ What package do you have? (A, B, or C): A
+               How many hours were used? 50
+------------------------------------------
+                     Customer: Brian Hall
+             Customer Package: A
+                   Hours Used: 50
+          Customer Amount Due: 225.95
+------------------------------------------
+If you switched to package B you would save  $67.00
+If you switched to package C you would save $206.00
+
+Submission
+
+    Your program style must comply with the Programming Coding Standard.
+    Your program must be compilable and executable according to the specification.
+    You must include header information in your source code.
+    Monetary values must be displayed in 2 decimal places.
+    Name your source file YourName_LabNumber.cpp
+    You must submit a soft-copy of your program on Canvas.
+
+Some Help
+
+//Possible Constant Declarations
+const double PACKAGE_A_MONTHLY_COST = 9.95;
+const double PACKAGE_A_OVERCHARGE = .08;
+const double PACKAGE_A_HOURS_CALL_TIME = 5;
+
+    You may want to use:
+        setw / setprecision / fixed / left / right / 
+        getline
+        if/else
+        switch
+
